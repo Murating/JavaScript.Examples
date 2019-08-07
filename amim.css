@@ -1,0 +1,133 @@
+
+
+body {
+background-color:dimgray;
+position:;
+perspective:800px;
+margin:300px;
+}
+#main{
+/ border:1px dashed red;
+position:relative ; 
+height:400px;
+width:340px;
+animation:main 15s linear infinite ;
+transform-style:preserve-3d;
+
+-webkit-animation:main 15s linear infinite ;
+-webkit-transform-style:preserve-3d;
+
+-moz-animation:main 15s linear infinite ;
+-moz-transform-style:preserve-3d;
+}
+@keyframes main{
+to{transform:rotateX(360deg);} 
+}
+-webkit-@keyframes main{
+to{transform:rotateX(360deg);} 
+}
+-moz-@keyframes main{
+to{transform:rotateX(360deg);} 
+}
+
+
+#main div{
+position:relative ; 
+top:80px;
+height:80px;
+/ border:1px dashed aqua;
+transform-style:preserve-3d;
+width:100%;
+}
+#r1{
+animation:r1 3s linear infinite ;
+-webkit-animation:r1 3s linear infinite ;
+-moz-animation:r1 3s linear infinite ;
+}
+@keyframes r1{
+to{transform:rotatey(360deg)} 
+}
+-webkit-@keyframes r1{
+to{transform:rotatey(360deg);
+-webkit-transform:rotatey(360deg);
+} 
+}
+-moz-@keyframes r1{
+to{transform:rotatey(360deg)} 
+}
+#r2{
+animation: r2 10s linear infinite; 
+-webkit-animation: r2 10s linear infinite; 
+-moz-animation: r2 10s linear infinite; 
+}
+@keyframes r2{
+to{transform:rotatey(-360deg) } 
+}
+-webkit-@keyframes r2{
+to{transform:rotatey(-360deg) } 
+}
+-moz-@keyframes r2{
+to{transform:rotatey(-360deg) } 
+}
+
+#r3{
+animation:r3 6s linear infinite ;
+-webkit-animation:r3 6s linear infinite ;
+-moz-animation:r3 6s linear infinite ;
+}
+@keyframes r3{
+from{transform:rotateY (0deg);}
+to{transform:rotatey(360deg)} 
+}
+-webkit-@keyframes r3{
+from{transform:rotateY (0deg);}
+to{transform:rotatey(360deg)} 
+}
+-moz-@keyframes r3{
+from{transform:rotateY (0deg);}
+to{transform:rotatey(360deg)} 
+}
+
+#main>div>div{
+top:25px;
+position:absolute; 
+width:80px;
+height:60px;
+border :1px solid white;
+border-radius:5px;
+box-shadow:0 0 15px 5px orange;
+
+color:lightgreen;
+text-align:center;
+line-height:55px;
+font-size:30px;
+text-shadow:0 0 10px orange;
+
+left:38%;
+
+transform-style:preserve-3d;
+/ background-color:white;
+/ opacity:0.5;
+
+}
+
+#a1,#b1,#c1{
+transform:translateZ(100px); 
+}
+#a2,#b2,#c2{
+transform:rotateY(90deg) translatez(100px); 
+}
+#a3,#b3,#c3{
+transform:rotateY(-90deg) translateZ(100px); 
+}
+#a4,#b4,#c4{
+transform:rotatey(180deg) translateZ(100px); 
+}
+
+h2{
+border-left:5px solid red;
+font:normal 2em gill-serif;
+padding:3px 10px;
+background:#a4a4a4;
+color:white;
+}

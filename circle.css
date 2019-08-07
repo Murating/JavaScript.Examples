@@ -1,0 +1,81 @@
+body{
+background-color: #202020;
+color: #aaa;
+}
+main{
+width:100%;
+min-height:300px;
+position:relative;
+}
+
+#sphere{
+perspective: 10000px;
+transform-style: preserve-3d;
+border: 1px solid #666;
+position: absolute;
+left: 70px;
+top: 100px;
+will-change: transform;
+}
+
+main:after{
+display:block ;
+content:'by Yaroslav Pieskov';
+position:fixed ;
+bottom:0;
+right:0;
+color:rgba(255,255,255,0.05);
+}
+
+button{
+background-color:#666; 
+color:#aaa;
+border: none ;
+padding: 0.5em 0.7em;
+box-shadow: 0 2px 4px 1px #333;
+margin-top:1em;
+outline:none;
+border-radius:2px;
+}
+button+button{
+margin-left:1em;
+
+}
+.rotate{
+-webkit-animation-name: spin;
+-webkit-animation-duration: 16000ms;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-moz-animation-name: spin;
+-moz-animation-duration: 16000ms;
+-moz-animation-iteration-count: infinite;
+-moz-animation-timing-function: linear;
+-ms-animation-name: spin;
+-ms-animation-duration: 16000ms;
+-ms-animation-iteration-count: infinite;
+-ms-animation-timing-function: linear;
+animation-name: spin;
+animation-duration: 16000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+from { -ms-transform: rotateY(0deg) rotateZ(0deg); }
+to { -ms-transform: rotateY(360deg) rotateZ(360deg); }
+}
+@-moz-keyframes spin {
+from { -moz-transform: rotateY(0deg) rotateZ(0deg); }
+to { -moz-transform: rotateY(360deg) rotateZ(360deg); }
+}
+@-webkit-keyframes spin {
+from { -webkit-transform: rotateY(0deg) rotateZ(0deg); }
+to { -webkit-transform: rotateY(360deg) rotateZ(360deg); }
+}
+@keyframes spin {
+from {
+transform:rotateY(0deg) rotateZ(0deg);
+}
+to {
+transform:rotateY(360deg) rotateZ(360deg);
+}
+}
